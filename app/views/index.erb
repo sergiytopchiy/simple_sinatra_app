@@ -1,0 +1,21 @@
+<h1> Hello <%= name.nil? ? 'man' : name %></h1>
+<p>How are You?</p>
+<a href="/users/new" class='btn btn-primary'>Add new user</a>
+<table class="table">
+  <tr>
+    <td>Id</td>
+    <td>First name</td>
+    <td>Last name</td>
+    <td>Email</td>
+    <td>Age</td>
+  </tr>
+  <% users.each do |user| %>
+    <tr>
+      <td><%= user.id %></td>
+      <td><%= user.first_name %></td>
+      <td><%= user.last_name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.age %></td>
+    </tr>
+  <% end %>
+</table>

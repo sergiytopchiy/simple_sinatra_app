@@ -1,0 +1,15 @@
+<h2>Hello, you can create a new user here</h2>
+<form action="/users" method="POST">
+  <label for="first_name">First Name</label>
+  <input type="text" name="first_name">
+
+  <label for="last_name">Last Name</label>
+  <input type="text" name="last_name">
+
+  <label for="email">Email</label>
+  <input type="email" name="email">
+
+  <label for="age" min="1" max="150">Age</label>
+  <input type="number" name="age">
+  <button class="btn btn-primary" type="submit">Save</button>
+</form>
